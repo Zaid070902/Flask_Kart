@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="color: white; background-color: black ">
+    <table style="border: 1px solid cyan">
+        {% for this in data %}
+        <tr><td style="border: 1px solid cyan">Item Name</td>
+        <td style="border: 1px solid cyan">{{ this[0] }}</td></tr>
+        <tr><td style="border: 1px solid cyan">Item ID</td>
+        <td style="border: 1px solid cyan">{{ this[1] }}</td></tr>
+        <tr><td style="border: 1px solid cyan">Quantity</td>
+        <td style="border: 1px solid cyan">{{ this[2] }}</td></tr>
+        <tr><td style="border: 1px solid cyan">Price</td>
+        <td style="border: 1px solid cyan">{{ this[3] }}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
